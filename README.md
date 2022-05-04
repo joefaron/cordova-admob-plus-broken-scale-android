@@ -1,5 +1,8 @@
 # cordova-admob-plus-broken-scale-android
 
+Can see bug report here: https://github.com/admob-plus/admob-plus/issues/503
+
+
 here's entire android studio / cordova project to show scaling issue with reward ads on admob-plus plugin.
 cordova v11,
 admob plus v1.27.0
