@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Security-Policy" content="default-src *  data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval';
+script-src * data: blob: 'unsafe-inline' 'unsafe-eval';
+connect-src * data: blob: 'unsafe-inline';
+img-src * data: blob: 'unsafe-inline';
+frame-src * data: blob: ;
+style-src * data: blob: 'unsafe-inline';
+font-src * data: blob: 'unsafe-inline';">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+
+    <title>X</title>
+</head>
+
+
+<body>
+
+<script type="text/javascript" src="cordova.js"></script>
+
+
+<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+<script src='js/jquery-ui.min.js?v1' type="text/javascript"></script>
+<script>
+
+document.addEventListener("deviceready",  function(){
+        onDeviceReady();
+});
+
+function onDeviceReady() {
+
+    try{
+    admob.start();
+
+    admob.configure({
+       testDeviceIds: ["9A706FF0A740843D1A599D9F05D3EDE1"]
+    });
+
+     var rewarded = new admob.RewardedAd({
+        adUnitId: 'ca-app-pub-3940256099942544/5224354917',
+        serverSideVerification: {userId: "1" },
+    });
+
+    rewarded.load().then(() => {
+        console.log("admob SHOWING REWARD AD");
+         rewarded.show();
+
+    }).catch((err) => {
+        console.log("EVT Error while loading:", err)
+    })
+
+    console.log('admob ok!!');
+    }catch(e){
+         console.log('admob error='+e);
+    }
+
+
+}
+
+
+
+</script>
+
+</body>
+</html>

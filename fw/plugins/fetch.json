@@ -1,0 +1,39 @@
+{
+  "cordova-support-android-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-support-android-plugin@~1.0.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-network-information": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-network-information@3.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-facebook-connect": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook-connect@^3.2.0"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "1",
+      "APP_NAME": "fw"
+    }
+  },
+  "admob-plus-cordova": {
+    "source": {
+      "type": "registry",
+      "id": "admob-plus-cordova@1.27.0"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID_ANDROID": "ca-app-pub-1356026121450116~5487988601"
+    }
+  }
+}
